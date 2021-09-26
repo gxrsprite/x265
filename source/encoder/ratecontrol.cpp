@@ -1437,6 +1437,21 @@ int RateControl::rateControlStart(Frame* curFrame, RateControlEntry* rce, Encode
 
         double q = x265_qScale2qp(rateEstimateQscale(curFrame, rce));
         q = x265_clip3((double)m_param->rc.qpMin, (double)m_param->rc.qpMax, q);
+
+        x265_zone* zone = getZone();
+        if (zone)//ÐÞ¸Ä´¦
+        {
+            if (zone->bForceQp)
+            {
+                q = zone->qp;
+                m_param->rc.qpMax = q;
+            }
+        }
+        else
+        {
+            m_param->rc.qpMax = m_param->rc.qpMax2;
+        }
+
         m_qp = int(q + 0.5);
         q = m_isGrainEnabled ? m_qp : q;
         rce->qpaRc = curEncData.m_avgQpRc = curEncData.m_avgQpAq = q;

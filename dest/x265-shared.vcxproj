@@ -1,0 +1,1464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C2E0C44D-79A0-3C23-95F7-A6BA245B6C60}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>x265-shared</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="G:\Projects\x265-master\dest\x265-shared.dir\nasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">x265-shared.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libx265</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">x265-shared.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libx265</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">x265-shared.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libx265</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">x265-shared.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libx265</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;G:\Projects\x265-master\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="Debug";x265_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR=\"Debug\";x265_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;G:\Projects\x265-master\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <NASM>
+      <IncludePaths>G:\Projects\x265-master\source\.\;G:\Projects\x265-master\source\dynamicHDR10\;G:\Projects\x265-master\dest\;G:\Projects\x265-master\source\common\;G:\Projects\x265-master\source\encoder\;G:\Projects\x265-master\source\compat\getopt\;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>-f</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="Debug";x265_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;G:\Projects\x265-master\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/Projects/x265-master/dest/Debug/libx265.lib</ImportLibrary>
+      <ModuleDefinitionFile>G:/Projects/x265-master/dest/x265.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>G:/Projects/x265-master/dest/Debug/libx265.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;G:\Projects\x265-master\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="Release";x265_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR=\"Release\";x265_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;G:\Projects\x265-master\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <NASM>
+      <IncludePaths>G:\Projects\x265-master\source\.\;G:\Projects\x265-master\source\dynamicHDR10\;G:\Projects\x265-master\dest\;G:\Projects\x265-master\source\common\;G:\Projects\x265-master\source\encoder\;G:\Projects\x265-master\source\compat\getopt\;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>-f</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="Release";x265_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;G:\Projects\x265-master\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/Projects/x265-master/dest/Release/libx265.lib</ImportLibrary>
+      <ModuleDefinitionFile>G:/Projects/x265-master/dest/x265.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>G:/Projects/x265-master/dest/Release/libx265.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;G:\Projects\x265-master\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="MinSizeRel";x265_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR=\"MinSizeRel\";x265_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;G:\Projects\x265-master\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <NASM>
+      <IncludePaths>G:\Projects\x265-master\source\.\;G:\Projects\x265-master\source\dynamicHDR10\;G:\Projects\x265-master\dest\;G:\Projects\x265-master\source\common\;G:\Projects\x265-master\source\encoder\;G:\Projects\x265-master\source\compat\getopt\;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>-f</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="MinSizeRel";x265_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;G:\Projects\x265-master\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/Projects/x265-master/dest/MinSizeRel/libx265.lib</ImportLibrary>
+      <ModuleDefinitionFile>G:/Projects/x265-master/dest/x265.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>G:/Projects/x265-master/dest/MinSizeRel/libx265.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;G:\Projects\x265-master\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="RelWithDebInfo";x265_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR=\"RelWithDebInfo\";x265_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;G:\Projects\x265-master\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <NASM>
+      <IncludePaths>G:\Projects\x265-master\source\.\;G:\Projects\x265-master\source\dynamicHDR10\;G:\Projects\x265-master\dest\;G:\Projects\x265-master\source\common\;G:\Projects\x265-master\source\encoder\;G:\Projects\x265-master\source\compat\getopt\;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>-f</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="RelWithDebInfo";x265_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;G:\Projects\x265-master\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/Projects/x265-master/dest/RelWithDebInfo/libx265.lib</ImportLibrary>
+      <ModuleDefinitionFile>G:/Projects/x265-master/dest/x265.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>G:/Projects/x265-master/dest/RelWithDebInfo/libx265.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\pixel-a.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating pixel-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/pixel-a.asm -o pixel-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\pixel-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\pixel-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating pixel-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/pixel-a.asm -o pixel-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\pixel-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\pixel-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating pixel-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/pixel-a.asm -o pixel-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\pixel-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\pixel-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating pixel-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/pixel-a.asm -o pixel-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\pixel-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\pixel-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\const-a.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating const-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/const-a.asm -o const-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\const-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\const-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating const-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/const-a.asm -o const-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\const-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\const-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating const-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/const-a.asm -o const-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\const-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\const-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating const-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/const-a.asm -o const-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\const-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\const-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\cpu-a.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cpu-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/cpu-a.asm -o cpu-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\cpu-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\cpu-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cpu-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/cpu-a.asm -o cpu-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\cpu-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\cpu-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cpu-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/cpu-a.asm -o cpu-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\cpu-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\cpu-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cpu-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/cpu-a.asm -o cpu-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\cpu-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\cpu-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\ssd-a.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ssd-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/ssd-a.asm -o ssd-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\ssd-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\ssd-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ssd-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/ssd-a.asm -o ssd-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\ssd-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\ssd-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ssd-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/ssd-a.asm -o ssd-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\ssd-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\ssd-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ssd-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/ssd-a.asm -o ssd-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\ssd-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\ssd-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\mc-a.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating mc-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/mc-a.asm -o mc-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\mc-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\mc-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating mc-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/mc-a.asm -o mc-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\mc-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\mc-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating mc-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/mc-a.asm -o mc-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\mc-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\mc-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating mc-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/mc-a.asm -o mc-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\mc-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\mc-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\mc-a2.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating mc-a2.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/mc-a2.asm -o mc-a2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\mc-a2.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\mc-a2.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating mc-a2.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/mc-a2.asm -o mc-a2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\mc-a2.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\mc-a2.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating mc-a2.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/mc-a2.asm -o mc-a2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\mc-a2.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\mc-a2.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating mc-a2.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/mc-a2.asm -o mc-a2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\mc-a2.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\mc-a2.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\pixel-util8.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating pixel-util8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/pixel-util8.asm -o pixel-util8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\pixel-util8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\pixel-util8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating pixel-util8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/pixel-util8.asm -o pixel-util8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\pixel-util8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\pixel-util8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating pixel-util8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/pixel-util8.asm -o pixel-util8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\pixel-util8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\pixel-util8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating pixel-util8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/pixel-util8.asm -o pixel-util8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\pixel-util8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\pixel-util8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\blockcopy8.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating blockcopy8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/blockcopy8.asm -o blockcopy8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\blockcopy8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\blockcopy8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating blockcopy8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/blockcopy8.asm -o blockcopy8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\blockcopy8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\blockcopy8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating blockcopy8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/blockcopy8.asm -o blockcopy8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\blockcopy8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\blockcopy8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating blockcopy8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/blockcopy8.asm -o blockcopy8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\blockcopy8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\blockcopy8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\pixeladd8.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating pixeladd8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/pixeladd8.asm -o pixeladd8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\pixeladd8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\pixeladd8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating pixeladd8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/pixeladd8.asm -o pixeladd8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\pixeladd8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\pixeladd8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating pixeladd8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/pixeladd8.asm -o pixeladd8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\pixeladd8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\pixeladd8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating pixeladd8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/pixeladd8.asm -o pixeladd8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\pixeladd8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\pixeladd8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\dct8.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating dct8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/dct8.asm -o dct8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\dct8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\dct8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating dct8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/dct8.asm -o dct8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\dct8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\dct8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating dct8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/dct8.asm -o dct8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\dct8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\dct8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating dct8.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/dct8.asm -o dct8.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\dct8.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\dct8.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\seaintegral.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating seaintegral.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/seaintegral.asm -o seaintegral.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\seaintegral.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\seaintegral.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating seaintegral.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/seaintegral.asm -o seaintegral.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\seaintegral.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\seaintegral.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating seaintegral.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/seaintegral.asm -o seaintegral.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\seaintegral.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\seaintegral.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating seaintegral.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/seaintegral.asm -o seaintegral.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\seaintegral.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\seaintegral.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\sad16-a.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating sad16-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/sad16-a.asm -o sad16-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\sad16-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\sad16-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating sad16-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/sad16-a.asm -o sad16-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\sad16-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\sad16-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating sad16-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/sad16-a.asm -o sad16-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\sad16-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\sad16-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating sad16-a.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/sad16-a.asm -o sad16-a.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\sad16-a.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\sad16-a.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\intrapred16.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating intrapred16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/intrapred16.asm -o intrapred16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\intrapred16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\intrapred16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating intrapred16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/intrapred16.asm -o intrapred16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\intrapred16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\intrapred16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating intrapred16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/intrapred16.asm -o intrapred16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\intrapred16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\intrapred16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating intrapred16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/intrapred16.asm -o intrapred16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\intrapred16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\intrapred16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\v4-ipfilter16.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating v4-ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/v4-ipfilter16.asm -o v4-ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\v4-ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\v4-ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating v4-ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/v4-ipfilter16.asm -o v4-ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\v4-ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\v4-ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating v4-ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/v4-ipfilter16.asm -o v4-ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\v4-ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\v4-ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating v4-ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/v4-ipfilter16.asm -o v4-ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\v4-ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\v4-ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\h4-ipfilter16.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating h4-ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/h4-ipfilter16.asm -o h4-ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\h4-ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\h4-ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating h4-ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/h4-ipfilter16.asm -o h4-ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\h4-ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\h4-ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating h4-ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/h4-ipfilter16.asm -o h4-ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\h4-ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\h4-ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating h4-ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/h4-ipfilter16.asm -o h4-ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\h4-ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\h4-ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\h-ipfilter16.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating h-ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/h-ipfilter16.asm -o h-ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\h-ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\h-ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating h-ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/h-ipfilter16.asm -o h-ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\h-ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\h-ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating h-ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/h-ipfilter16.asm -o h-ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\h-ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\h-ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating h-ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/h-ipfilter16.asm -o h-ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\h-ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\h-ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\ipfilter16.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/ipfilter16.asm -o ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/ipfilter16.asm -o ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/ipfilter16.asm -o ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ipfilter16.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/ipfilter16.asm -o ipfilter16.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\ipfilter16.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\ipfilter16.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\loopfilter.asm.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating loopfilter.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/loopfilter.asm -o loopfilter.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\source\common\x86\loopfilter.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\loopfilter.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating loopfilter.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/loopfilter.asm -o loopfilter.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\source\common\x86\loopfilter.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\loopfilter.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating loopfilter.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/loopfilter.asm -o loopfilter.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\source\common\x86\loopfilter.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\loopfilter.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating loopfilter.asm.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\NASM\nasm.exe" -f win64 -DARCH_X86_64=1 -I G:/Projects/x265-master/source/common/../common/x86/ -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 G:/Projects/x265-master/source/common/x86/loopfilter.asm -o loopfilter.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\source\common\x86\loopfilter.asm;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\loopfilter.asm.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\source\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule G:/Projects/x265-master/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SG:/Projects/x265-master/source -BG:/Projects/x265-master/dest --check-stamp-file G:/Projects/x265-master/dest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFiles.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindGit.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindHg.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;F:\Program Files\CMake\share\cmake-3.19\Templates\MSBuild\nasm.props.in;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeCCompiler.cmake;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeSystem.cmake;G:\Projects\x265-master\source\cmake\FindNasm.cmake;G:\Projects\x265-master\source\cmake\FindVLD.cmake;G:\Projects\x265-master\source\cmake\Version.cmake;G:\Projects\x265-master\source\cmake\cmake_uninstall.cmake.in;G:\Projects\x265-master\source\x265.def.in;G:\Projects\x265-master\source\x265.pc.in;G:\Projects\x265-master\source\x265.rc.in;G:\Projects\x265-master\source\x265_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule G:/Projects/x265-master/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SG:/Projects/x265-master/source -BG:/Projects/x265-master/dest --check-stamp-file G:/Projects/x265-master/dest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFiles.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindGit.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindHg.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;F:\Program Files\CMake\share\cmake-3.19\Templates\MSBuild\nasm.props.in;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeCCompiler.cmake;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeSystem.cmake;G:\Projects\x265-master\source\cmake\FindNasm.cmake;G:\Projects\x265-master\source\cmake\FindVLD.cmake;G:\Projects\x265-master\source\cmake\Version.cmake;G:\Projects\x265-master\source\cmake\cmake_uninstall.cmake.in;G:\Projects\x265-master\source\x265.def.in;G:\Projects\x265-master\source\x265.pc.in;G:\Projects\x265-master\source\x265.rc.in;G:\Projects\x265-master\source\x265_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule G:/Projects/x265-master/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SG:/Projects/x265-master/source -BG:/Projects/x265-master/dest --check-stamp-file G:/Projects/x265-master/dest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFiles.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindGit.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindHg.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;F:\Program Files\CMake\share\cmake-3.19\Templates\MSBuild\nasm.props.in;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeCCompiler.cmake;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeSystem.cmake;G:\Projects\x265-master\source\cmake\FindNasm.cmake;G:\Projects\x265-master\source\cmake\FindVLD.cmake;G:\Projects\x265-master\source\cmake\Version.cmake;G:\Projects\x265-master\source\cmake\cmake_uninstall.cmake.in;G:\Projects\x265-master\source\x265.def.in;G:\Projects\x265-master\source\x265.pc.in;G:\Projects\x265-master\source\x265.rc.in;G:\Projects\x265-master\source\x265_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule G:/Projects/x265-master/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SG:/Projects/x265-master/source -BG:/Projects/x265-master/dest --check-stamp-file G:/Projects/x265-master/dest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckFunctionExists.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFiles.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindGit.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindHg.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;F:\Program Files\CMake\share\cmake-3.19\Templates\MSBuild\nasm.props.in;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeCCompiler.cmake;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeSystem.cmake;G:\Projects\x265-master\source\cmake\FindNasm.cmake;G:\Projects\x265-master\source\cmake\FindVLD.cmake;G:\Projects\x265-master\source\cmake\Version.cmake;G:\Projects\x265-master\source\cmake\cmake_uninstall.cmake.in;G:\Projects\x265-master\source\x265.def.in;G:\Projects\x265-master\source\x265.pc.in;G:\Projects\x265-master\source\x265.rc.in;G:\Projects\x265-master\source\x265_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="G:\Projects\x265-master\dest\x265.def" />
+    <Object Include="G:\Projects\x265-master\dest\pixel-a.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\const-a.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\cpu-a.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\ssd-a.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\mc-a.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\mc-a2.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\pixel-util8.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\blockcopy8.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\pixeladd8.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\dct8.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\seaintegral.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\sad16-a.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\intrapred16.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\v4-ipfilter16.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\h4-ipfilter16.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\h-ipfilter16.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\ipfilter16.asm.obj" />
+    <Object Include="G:\Projects\x265-master\dest\loopfilter.asm.obj" />
+    <ResourceCompile Include="G:\Projects\x265-master\dest\x265.rc" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\analysis.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\search.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\bitcost.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\motion.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\slicetype.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\frameencoder.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\framefilter.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\level.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\nal.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\sei.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\sao.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\entropy.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\dpb.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\ratecontrol.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\reference.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\encoder.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\api.obj" />
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\weightPrediction.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\asm-primitives.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\vec-primitives.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\dct-sse3.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\dct-ssse3.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\dct-sse41.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\winxp.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\primitives.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\pixel.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\dct.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\lowpassdct.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\ipfilter.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\intrapred.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\loopfilter.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\constants.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\cpu.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\version.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\threading.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\threadpool.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\wavefront.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\md5.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\bitstream.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\yuv.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\shortyuv.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\picyuv.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\common.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\param.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\frame.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\framedata.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\cudata.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\slice.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\lowres.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\piclist.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\predict.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\scalinglist.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\quant.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\deblock.obj" />
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\scaler.obj" />
+    <Object Include="G:\Projects\x265-master\dest\dynamicHDR10\dynamicHDR10.dir\$(Configuration)\json11.obj" />
+    <Object Include="G:\Projects\x265-master\dest\dynamicHDR10\dynamicHDR10.dir\$(Configuration)\JsonHelper.obj" />
+    <Object Include="G:\Projects\x265-master\dest\dynamicHDR10\dynamicHDR10.dir\$(Configuration)\metadataFromJson.obj" />
+    <Object Include="G:\Projects\x265-master\dest\dynamicHDR10\dynamicHDR10.dir\$(Configuration)\SeiMetadataDictionary.obj" />
+    <Object Include="G:\Projects\x265-master\dest\dynamicHDR10\dynamicHDR10.dir\$(Configuration)\api.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\Projects\x265-master\dest\ZERO_CHECK.vcxproj">
+      <Project>{971AB2E6-6B98-3E3A-84FF-EF2F13A9227D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\Projects\x265-master\dest\common\common.vcxproj">
+      <Project>{563FC4A5-0C04-354C-9558-3422C38565F6}</Project>
+      <Name>common</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\Projects\x265-master\dest\dynamicHDR10\dynamicHDR10.vcxproj">
+      <Project>{063231E8-34BC-36F2-887E-B83646B5E5EB}</Project>
+      <Name>dynamicHDR10</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\Projects\x265-master\dest\encoder\encoder.vcxproj">
+      <Project>{B7E4438F-45D2-3569-92A8-C0CD3C6768DC}</Project>
+      <Name>encoder</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="F:\Program Files\CMake\share\cmake-3.19\Templates\MSBuild\nasm.targets" />
+  </ImportGroup>
+</Project>

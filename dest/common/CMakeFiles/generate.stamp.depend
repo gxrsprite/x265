@@ -1,0 +1,15 @@
+# CMake generation dependency list for this directory.
+F:/Program Files/CMake/share/cmake-3.19/Modules/CMakeASMCompiler.cmake.in
+F:/Program Files/CMake/share/cmake-3.19/Modules/CMakeASMInformation.cmake
+F:/Program Files/CMake/share/cmake-3.19/Modules/CMakeCompilerIdDetection.cmake
+F:/Program Files/CMake/share/cmake-3.19/Modules/CMakeDetermineASMCompiler.cmake
+F:/Program Files/CMake/share/cmake-3.19/Modules/CMakeDetermineCompiler.cmake
+F:/Program Files/CMake/share/cmake-3.19/Modules/CMakeDetermineCompilerId.cmake
+F:/Program Files/CMake/share/cmake-3.19/Modules/CMakeFindBinUtils.cmake
+F:/Program Files/CMake/share/cmake-3.19/Modules/CMakeTestASMCompiler.cmake
+F:\Program Files\CMake\share\cmake-3.19\Templates\MSBuild\nasm.props.in
+G:/Projects/x265-master/dest/CMakeFiles/3.19.4/CMakeASM_NASMCompiler.cmake
+G:/Projects/x265-master/source/cmake/CMakeASM_NASMInformation.cmake
+G:/Projects/x265-master/source/cmake/CMakeDetermineASM_NASMCompiler.cmake
+G:/Projects/x265-master/source/cmake/CMakeTestASM_NASMCompiler.cmake
+G:/Projects/x265-master/source/common/CMakeLists.txt

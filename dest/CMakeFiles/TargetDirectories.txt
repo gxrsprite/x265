@@ -1,0 +1,16 @@
+G:/Projects/x265-master/dest/CMakeFiles/x265-static.dir
+G:/Projects/x265-master/dest/CMakeFiles/hdr10plus-static.dir
+G:/Projects/x265-master/dest/CMakeFiles/x265-shared.dir
+G:/Projects/x265-master/dest/CMakeFiles/hdr10plus-shared.dir
+G:/Projects/x265-master/dest/CMakeFiles/cli.dir
+G:/Projects/x265-master/dest/CMakeFiles/uninstall.dir
+G:/Projects/x265-master/dest/CMakeFiles/INSTALL.dir
+G:/Projects/x265-master/dest/CMakeFiles/ALL_BUILD.dir
+G:/Projects/x265-master/dest/CMakeFiles/ZERO_CHECK.dir
+G:/Projects/x265-master/dest/dynamicHDR10/CMakeFiles/dynamicHDR10.dir
+G:/Projects/x265-master/dest/dynamicHDR10/CMakeFiles/INSTALL.dir
+G:/Projects/x265-master/dest/dynamicHDR10/CMakeFiles/ALL_BUILD.dir
+G:/Projects/x265-master/dest/encoder/CMakeFiles/encoder.dir
+G:/Projects/x265-master/dest/encoder/CMakeFiles/INSTALL.dir
+G:/Projects/x265-master/dest/common/CMakeFiles/common.dir
+G:/Projects/x265-master/dest/common/CMakeFiles/INSTALL.dir

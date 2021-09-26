@@ -2506,6 +2506,7 @@ void x265_copy_params(x265_param* dst, x265_param* src)
     dst->rc.qgSize = src->rc.qgSize;
     dst->rc.bEnableGrain = src->rc.bEnableGrain;
     dst->rc.qpMax = src->rc.qpMax;
+    dst->rc.qpMax2 = src->rc.qpMax;
     dst->rc.qpMin = src->rc.qpMin;
     dst->rc.bEnableConstVbv = src->rc.bEnableConstVbv;
     dst->rc.hevcAq = src->rc.hevcAq;

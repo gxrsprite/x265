@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\Projects\x265-master\source\common\x86\asm-primitives.cpp">
+      <Filter>Assembly</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\vec\vec-primitives.cpp">
+      <Filter>Intrinsics</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\vec\dct-sse3.cpp">
+      <Filter>Intrinsics</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\vec\dct-ssse3.cpp">
+      <Filter>Intrinsics</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\vec\dct-sse41.cpp">
+      <Filter>Intrinsics</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\winxp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\primitives.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\pixel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\dct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\lowpassdct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\ipfilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\intrapred.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\loopfilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\constants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\cpu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\threading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\threadpool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\wavefront.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\md5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\bitstream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\yuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\shortyuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\picyuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\param.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\frame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\framedata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\cudata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\slice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\lowres.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\piclist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\predict.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\scalinglist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\quant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\deblock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\scaler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\pixel.h">
+      <Filter>Assembly</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\mc.h">
+      <Filter>Assembly</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\ipfilter8.h">
+      <Filter>Assembly</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\blockcopy8.h">
+      <Filter>Assembly</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\dct8.h">
+      <Filter>Assembly</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\loopfilter.h">
+      <Filter>Assembly</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\seaintegral.h">
+      <Filter>Assembly</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\winxp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\primitives.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\cpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\threading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\threadpool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\wavefront.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\bitstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\yuv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\shortyuv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\picyuv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\param.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\framedata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\cudata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\slice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\lowres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\mv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\piclist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\predict.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\scalinglist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\quant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\contexts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\deblock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\common\scaler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\source\common\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assembly">
+      <UniqueIdentifier>{3240EAB1-6615-3634-9391-29BA92F4CBF2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9A2023F6-45D5-31B7-B621-BCE56FE88BD2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Intrinsics">
+      <UniqueIdentifier>{366A57A4-D74D-3007-957D-6CCDA90BAB86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B9A1690B-8090-3078-AA85-7326894F9778}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\Projects\x265-master\source\input\input.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\input\y4m.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\input\yuv.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\output\output.cpp">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\output\raw.cpp">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\output\reconplay.cpp">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\output\y4m.cpp">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\output\yuv.cpp">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\compat\getopt\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\x265.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\x265cli.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\abrEncApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G:\Projects\x265-master\source\input\input.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\input\y4m.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\input\yuv.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\output\output.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\output\raw.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\output\reconplay.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\output\y4m.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\output\yuv.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\compat\getopt\getopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\x265.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\x265cli.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Projects\x265-master\source\abrEncApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\source\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="G:\Projects\x265-master\COPYING" />
+    <None Include="G:\Projects\x265-master\dest\x265.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="G:\Projects\x265-master\dest\x265.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9A2023F6-45D5-31B7-B621-BCE56FE88BD2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B9A1690B-8090-3078-AA85-7326894F9778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{2CF1FD4A-7ED4-3738-87B8-D9206CC6A061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="output">
+      <UniqueIdentifier>{5837D3A6-EA37-3C5E-8E51-3A5E4CEE8121}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

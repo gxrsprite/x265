@@ -1479,7 +1479,7 @@ typedef struct x265_param
 
         /* sets a hard upper limit on QP */
         int      qpMax;
-
+        int      qpMax2;
         /* sets a hard lower limit on QP */
         int      qpMin;
 

@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{563FC4A5-0C04-354C-9558-3422C38565F6}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>common</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="G:\Projects\x265-master\dest\common\common.dir\nasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">common.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">common.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">common</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">common.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">common.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">common</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">common.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">common.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">common</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">common.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">common.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">common</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <NASM>
+      <IncludePaths>G:\Projects\x265-master\source\.\;G:\Projects\x265-master\source\dynamicHDR10\;G:\Projects\x265-master\dest\;G:\Projects\x265-master\source\common\;G:\Projects\x265-master\source\encoder\;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>-f</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <NASM>
+      <IncludePaths>G:\Projects\x265-master\source\.\;G:\Projects\x265-master\source\dynamicHDR10\;G:\Projects\x265-master\dest\;G:\Projects\x265-master\source\common\;G:\Projects\x265-master\source\encoder\;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>-f</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <NASM>
+      <IncludePaths>G:\Projects\x265-master\source\.\;G:\Projects\x265-master\source\dynamicHDR10\;G:\Projects\x265-master\dest\;G:\Projects\x265-master\source\common\;G:\Projects\x265-master\source\encoder\;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>-f</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <NASM>
+      <IncludePaths>G:\Projects\x265-master\source\.\;G:\Projects\x265-master\source\dynamicHDR10\;G:\Projects\x265-master\dest\;G:\Projects\x265-master\source\common\;G:\Projects\x265-master\source\encoder\;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>-f</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;_WIN32_WINNT=_WIN32_WINNT_WIN7;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </NASM>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Projects\x265-master\source\.;G:\Projects\x265-master\source\dynamicHDR10;G:\Projects\x265-master\dest;G:\Projects\x265-master\source\common;G:\Projects\x265-master\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\source\common\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule G:/Projects/x265-master/source/common/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SG:/Projects/x265-master/source -BG:/Projects/x265-master/dest --check-stamp-file G:/Projects/x265-master/dest/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeASMCompiler.cmake.in;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeASMInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineASMCompiler.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestASMCompiler.cmake;F:\Program Files\CMake\share\cmake-3.19\Templates\MSBuild\nasm.props.in;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeASM_NASMCompiler.cmake;G:\Projects\x265-master\source\cmake\CMakeASM_NASMInformation.cmake;G:\Projects\x265-master\source\cmake\CMakeDetermineASM_NASMCompiler.cmake;G:\Projects\x265-master\source\cmake\CMakeTestASM_NASMCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Projects\x265-master\dest\common\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule G:/Projects/x265-master/source/common/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SG:/Projects/x265-master/source -BG:/Projects/x265-master/dest --check-stamp-file G:/Projects/x265-master/dest/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeASMCompiler.cmake.in;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeASMInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineASMCompiler.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestASMCompiler.cmake;F:\Program Files\CMake\share\cmake-3.19\Templates\MSBuild\nasm.props.in;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeASM_NASMCompiler.cmake;G:\Projects\x265-master\source\cmake\CMakeASM_NASMInformation.cmake;G:\Projects\x265-master\source\cmake\CMakeDetermineASM_NASMCompiler.cmake;G:\Projects\x265-master\source\cmake\CMakeTestASM_NASMCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Projects\x265-master\dest\common\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule G:/Projects/x265-master/source/common/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SG:/Projects/x265-master/source -BG:/Projects/x265-master/dest --check-stamp-file G:/Projects/x265-master/dest/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeASMCompiler.cmake.in;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeASMInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineASMCompiler.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestASMCompiler.cmake;F:\Program Files\CMake\share\cmake-3.19\Templates\MSBuild\nasm.props.in;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeASM_NASMCompiler.cmake;G:\Projects\x265-master\source\cmake\CMakeASM_NASMInformation.cmake;G:\Projects\x265-master\source\cmake\CMakeDetermineASM_NASMCompiler.cmake;G:\Projects\x265-master\source\cmake\CMakeTestASM_NASMCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Projects\x265-master\dest\common\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule G:/Projects/x265-master/source/common/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"F:\Program Files\CMake\bin\cmake.exe" -SG:/Projects/x265-master/source -BG:/Projects/x265-master/dest --check-stamp-file G:/Projects/x265-master/dest/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeASMCompiler.cmake.in;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeASMInformation.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineASMCompiler.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;F:\Program Files\CMake\share\cmake-3.19\Modules\CMakeTestASMCompiler.cmake;F:\Program Files\CMake\share\cmake-3.19\Templates\MSBuild\nasm.props.in;G:\Projects\x265-master\dest\CMakeFiles\3.19.4\CMakeASM_NASMCompiler.cmake;G:\Projects\x265-master\source\cmake\CMakeASM_NASMInformation.cmake;G:\Projects\x265-master\source\cmake\CMakeDetermineASM_NASMCompiler.cmake;G:\Projects\x265-master\source\cmake\CMakeTestASM_NASMCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Projects\x265-master\dest\common\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="G:\Projects\x265-master\source\common\x86\asm-primitives.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\pixel.h" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\mc.h" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\ipfilter8.h" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\blockcopy8.h" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\dct8.h" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\loopfilter.h" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\x86\seaintegral.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\vec\vec-primitives.cpp" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\vec\dct-sse3.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\vec\dct-ssse3.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\vec\dct-sse41.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClInclude Include="G:\Projects\x265-master\source\common\winxp.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\winxp.cpp" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\primitives.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClInclude Include="G:\Projects\x265-master\source\common\primitives.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\pixel.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\dct.cpp" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\lowpassdct.cpp" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\ipfilter.cpp" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\intrapred.cpp" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\loopfilter.cpp" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\constants.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\constants.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\cpu.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\cpu.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\version.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">X265_VERSION=3.4+28-419182243;ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">X265_VERSION=3.4+28-419182243;ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">X265_VERSION=3.4+28-419182243;ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">X265_VERSION=3.4+28-419182243;ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="G:\Projects\x265-master\source\common\threading.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ENABLE_ASSEMBLY=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClInclude Include="G:\Projects\x265-master\source\common\threading.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\threadpool.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\threadpool.h" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\wavefront.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\wavefront.cpp" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\md5.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\md5.h" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\bitstream.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\bitstream.cpp" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\yuv.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\yuv.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\shortyuv.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\shortyuv.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\picyuv.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\picyuv.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\common.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\common.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\param.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\param.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\frame.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\frame.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\framedata.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\framedata.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\cudata.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\cudata.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\slice.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\slice.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\lowres.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\lowres.h" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\mv.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\piclist.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\piclist.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\predict.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\predict.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\scalinglist.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\scalinglist.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\quant.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\quant.h" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\contexts.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\deblock.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\deblock.h" />
+    <ClCompile Include="G:\Projects\x265-master\source\common\scaler.cpp" />
+    <ClInclude Include="G:\Projects\x265-master\source\common\scaler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\Projects\x265-master\dest\ZERO_CHECK.vcxproj">
+      <Project>{971AB2E6-6B98-3E3A-84FF-EF2F13A9227D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="F:\Program Files\CMake\share\cmake-3.19\Templates\MSBuild\nasm.targets" />
+  </ImportGroup>
+</Project>

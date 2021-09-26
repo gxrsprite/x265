@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\pixel-a.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\const-a.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\cpu-a.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\ssd-a.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\mc-a.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\mc-a2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\pixel-util8.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\blockcopy8.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\pixeladd8.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\dct8.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\seaintegral.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\sad16-a.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\intrapred16.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\v4-ipfilter16.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\h4-ipfilter16.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\h-ipfilter16.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\ipfilter16.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\dest\CMakeFiles\7ccb5d5af4fd9b8f8059e798a4c2286a\loopfilter.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Projects\x265-master\source\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="G:\Projects\x265-master\dest\x265.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="G:\Projects\x265-master\dest\pixel-a.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\const-a.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\cpu-a.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\ssd-a.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\mc-a.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\mc-a2.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\pixel-util8.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\blockcopy8.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\pixeladd8.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\dct8.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\seaintegral.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\sad16-a.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\intrapred16.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\v4-ipfilter16.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\h4-ipfilter16.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\h-ipfilter16.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\ipfilter16.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\loopfilter.asm.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\analysis.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\search.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\bitcost.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\motion.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\slicetype.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\frameencoder.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\framefilter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\level.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\nal.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\sei.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\sao.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\entropy.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\dpb.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\ratecontrol.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\reference.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\encoder.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\api.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\encoder\encoder.dir\$(Configuration)\weightPrediction.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\asm-primitives.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\vec-primitives.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\dct-sse3.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\dct-ssse3.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\dct-sse41.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\winxp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\primitives.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\pixel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\dct.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\lowpassdct.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\ipfilter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\intrapred.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\loopfilter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\constants.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\cpu.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\version.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\threading.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\threadpool.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\wavefront.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\md5.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\bitstream.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\yuv.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\shortyuv.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\picyuv.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\common.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\param.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\frame.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\framedata.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\cudata.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\slice.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\lowres.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\piclist.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\predict.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\scalinglist.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\quant.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\deblock.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\common\common.dir\$(Configuration)\scaler.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\dynamicHDR10\dynamicHDR10.dir\$(Configuration)\json11.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\dynamicHDR10\dynamicHDR10.dir\$(Configuration)\JsonHelper.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\dynamicHDR10\dynamicHDR10.dir\$(Configuration)\metadataFromJson.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\dynamicHDR10\dynamicHDR10.dir\$(Configuration)\SeiMetadataDictionary.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="G:\Projects\x265-master\dest\dynamicHDR10\dynamicHDR10.dir\$(Configuration)\api.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="G:\Projects\x265-master\dest\x265.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{18698004-6FB9-366C-84C7-203FEAE3ED4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{7B70C958-B463-30FA-BD1E-FD92533B77DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{219910E9-C775-31CA-ABB8-048A362EFAFA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B9A1690B-8090-3078-AA85-7326894F9778}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
